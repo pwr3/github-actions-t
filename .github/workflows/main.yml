@@ -1,0 +1,17 @@
+name: test-actions
+
+on:
+  push:
+    branches: 
+      main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run github actions
+        run: 
+          echo "Test..."  
+          echo "Do some stuff"
+      - uses: actions/checkout@v3
